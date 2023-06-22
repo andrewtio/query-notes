@@ -40,6 +40,7 @@ const App = () => {
 
   const result = useQuery("notes", getNotes, {
     refetchOnWindowFocus: false,
+    retry: 1,
   });
   console.log(result);
 
